@@ -4,8 +4,9 @@
     <mj-style >
       .introText { padding-left: 20px; border-left: 1px solid #878787; }
       .tableTitle { font-size:14px; }
-      .maxheight135 {max-height: 135px !important;height: 135px !important;overflow:hidden !important;}
-      .maxheight170 {max-height: 180px !important;height: 180px !important;overflow:hidden !important;}
+      .rImage table, .rImage table td, .rImage table td img { width: 100% !important; }
+      .maxheight135 {max-height: 135px !important;height: auto !important;overflow:hidden !important;}
+      .maxheight180 {max-height: 180px !important;height: 180px !important;overflow:hidden !important;}
 
       @media (max-width:480px) {
         html, body { overflow-x: hidden; }
@@ -15,7 +16,7 @@
         .introText { padding-left: 0px; border-left: 0px;  text-align: justify;}
         .logo { width: 120px !important; }
         .fbLogo { text-align: left; }
-        .maxheight135, .maxheight170 {height: auto !important; max-height: auto !important;}
+        .maxheight135, .maxheight180 {height: auto !important; max-height: auto !important;}
         .soc {width: 60% !important; margin: 0 auto !important;}
         .texttable table {width: 100% !important; max-width: 250px !important; margin: 0 auto !important;}
       }
@@ -47,7 +48,7 @@
           </mj-column>
           <mj-column>
             <mj-text align="right" font-size="14px" line-height="18px" padding-right="30px" padding-left="0px" padding-top="25px" padding-bottom="25px" color="#000000" font-family="Roboto, Arial, sans-serif">
-               <span style="font-size: 13px"><a href="#" style="color:#000000;">Веб-версия</a></span>
+               <a href="#" style="color:#000000;"><span style="font-size: 13px">Веб-версия</span></a>
             </mj-text>
           </mj-column>
         </mj-group>
@@ -123,9 +124,10 @@
        height="250px"
        background-width="600px"
        background-height="250px"
-       background-url="https://image.ibb.co/mnh1Pn/1.jpg"
-       background-color="#2a3448"
-       padding="20px 0px 0px">
+       background-color="#00a97a"
+       padding="20px 0px 0px"
+       css-class="fullWidth"
+       background-url="https://image.ibb.co/mnh1Pn/1.jpg">
        <mj-hero-content width="100%">
          <mj-text
            align="left" color="#FFFFFF" font-family="Roboto, Arial, sans-serif" font-size="27" line-height="30px" padding-left="25" padding-right="25" padding-bottom="10px" padding-top="10">
@@ -135,12 +137,26 @@
              <span>для новой экономики</span>
            </p>
          </mj-text>
-         <mj-button href="#" background-color="#FFFFFF" color="#414141" font-size="18px" line-height="18px" align="left" vertical-align="middle" border="none" padding="15px 25px" border-radius="3px" font-family="Roboto, Arial, sans-serif"
-            padding-left="25px" padding-right="25px" padding-bottom="35px" padding-top="10px">
-           Читать
-         </mj-button>
+
+         <mj-raw>
+           <tr>
+             <td align="left" style="text-align: left !important; margin: 0; padding-right: 30px; padding-left: 25px; padding-top: 20px; padding-bottom: 20px; color: #000000; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, sans-serif; text-decoration: none;">
+               <table border="0" cellspacing="0" cellpadding="0">
+                 <tbody>
+                   <tr>
+                   <td align="left" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; " bgcolor="#FFFFFF">
+                     <a href="https://litmus.com" target="_blank" style="width:80px;font-size: 16px; font-family: 'Roboto', Arial, sans-serif; color: #5d5d5e; border-top: 3px solid #FFFFFF; border-bottom: 3px solid #FFFFFF; border-right: 20px solid #FFFFFF; border-left: 20px solid #FFFFFF; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; padding: 6px 12px; display: block; text-align: center;">Читать</a>
+                   </td>
+                   </tr>
+                 </tbody>
+               </table>
+             </td>
+           </tr>
+         </mj-raw>
+
        </mj-hero-content>
-     </mj-hero>
+
+      </mj-hero>
 
 
      <mj-raw>
@@ -171,43 +187,59 @@
         <mj-table padding="10px 10px 0">
           <tr>
             <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
-              <p class="maxheight170" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
-                <span style="font-size: 18px;line-height:22px;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</span>
-                <br/>
-                <br/>
-                <span style="font-size: 14px;line-height:18px;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</span>
-              </p>
+              <div class="maxheight180" style="font-size: 14px;line-height:19px;color: #000000;overflow:hidden;">
+                <p style="margin:0;font-size: 18px;line-height:18px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
+                <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
+              </div>
             </td>
           </tr>
-        </mj-table>
+          <tr>
+            <td align="center" style="margin: 0; padding-right: 0px; padding-left: 0px; padding-top: 15px; padding-bottom: 15px; color: #000000; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, sans-serif; text-decoration: none;">
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                  <td align="center" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; " bgcolor="#2198e8">
+                    <a href="https://litmus.com" target="_blank" style="width:80px;font-size: 16px; font-family: 'Roboto', Arial, sans-serif; color: #FFFFFF; border-top: 3px solid #2198e8; border-bottom: 3px solid #2198e8; border-right: 20px solid #2198e8; border-left: 20px solid #2198e8; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; padding: 6px 12px; display: block; text-align: center;">Читать</a>
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          </mj-table>
 
-          <mj-button href="#" background-color="#2198e8" color="#FFFFFF" font-size="18px" line-height="18px" align="center" vertical-align="middle" border="none" padding="7px 10px" border-radius="3px" font-family="Roboto, Arial, sans-serif"
-             padding-left="10" padding-right="10" padding-bottom="10" padding-top="10">
-            Читать
-          </mj-button>
       </mj-column>
 
-      <mj-column width="3px"><mj-text><p></p></mj-text></mj-column>
+      <mj-column width="10px"><mj-text><p></p></mj-text></mj-column>
 
       <mj-column width="250px" background-color="#FFFFFF" css-class="texttable">
         <mj-image css-class="rImage" alt="" align="center" border="none" width="250" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/iWFZ2H/big.jpg">
         </mj-image>
+
         <mj-table padding="10px 10px 0">
           <tr>
             <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
-              <p class="maxheight170" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
-                <span style="font-size: 18px;line-height:22px;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</span>
-                <br/>
-                <br/>
-                <span style="font-size: 14px;line-height:18px;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</span>
-              </p>
+              <div class="maxheight180" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
+                <p style="margin:0;font-size: 18px;line-height:18px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
+                <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
+              </div>
             </td>
           </tr>
-        </mj-table>
-        <mj-button href="#" background-color="#2198e8" color="#FFFFFF" font-size="18px" line-height="18px" align="center" vertical-align="middle" border="none" padding="7px 10px" border-radius="3px" font-family="Roboto, Arial, sans-serif"
-           padding-left="10" padding-right="10" padding-bottom="10" padding-top="10">
-          Читать
-        </mj-button>
+          <tr>
+            <td align="center" style="margin: 0; padding-right: 0px; padding-left: 0px; padding-top: 15px; padding-bottom: 15px; color: #000000; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, sans-serif; text-decoration: none;">
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                  <td align="center" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; " bgcolor="#2198e8">
+                    <a href="https://litmus.com" target="_blank" style="width:80px;font-size: 16px; font-family: 'Roboto', Arial, sans-serif; color: #FFFFFF; border-top: 3px solid #2198e8; border-bottom: 3px solid #2198e8; border-right: 20px solid #2198e8; border-left: 20px solid #2198e8; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius-top-left: 3px; border-radius-top-right: 3px; border-radius-bottom-right: 3px; border-radius-bottom-left: 3px; padding: 6px 12px; display: block; text-align: center;">Читать</a>
+                  </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          </mj-table>
+
       </mj-column>
 
     </mj-section>
@@ -367,12 +399,10 @@
         <mj-table padding="10px 10px 0">
           <tr>
             <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
-              <p class="maxheight170" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
-                <span style="font-size: 18px;line-height:22px;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</span>
-                <br/>
-                <br/>
-                <span style="font-size: 14px;line-height:18px;color: #000000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-              </p>
+              <div class="maxheight135" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
+                <p style="margin:0;font-size: 18px;line-height:22px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
+                <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
+              </div>
             </td>
           </tr>
         </mj-table>
@@ -381,7 +411,7 @@
         </mj-text>
       </mj-column>
 
-      <mj-column width="3px"><mj-text><p></p></mj-text></mj-column>
+      <mj-column width="10px"><mj-text><p></p></mj-text></mj-column>
 
       <mj-column width="250px" background-color="#FFFFFF" css-class="texttable">
         <mj-image css-class="rImage" alt="" align="center" border="none" width="250" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/fQwT4n/5.jpg">
@@ -389,12 +419,10 @@
         <mj-table padding="10px 10px 0">
           <tr>
             <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
-              <p class="maxheight170" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
-                <span style="font-size: 18px;line-height:22px;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</span>
-                <br/>
-                <br/>
-                <span style="font-size: 14px;line-height:18px;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</span>
-              </p>
+              <div class="maxheight135" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
+                <p style="margin:0;font-size: 18px;line-height:22px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
+                <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
+              </div>
             </td>
           </tr>
         </mj-table>
@@ -493,13 +521,13 @@
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 СФЕРА-КУРЬЕР
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
           </mj-text>
         </mj-column>
@@ -511,13 +539,13 @@
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 НАЗВАНИЕ НАЗВАНИЕ
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
           </mj-text>
         </mj-column>
@@ -529,13 +557,13 @@
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
               <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 название
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
             </div>
           </mj-text>
         </mj-column>
