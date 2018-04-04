@@ -6,7 +6,7 @@
       .tableTitle { font-size:14px; }
       .rImage table, .rImage table td, .rImage table td img { width: 100% !important; }
       .maxheight135 {max-height: 135px !important;height: auto !important;overflow:hidden !important;}
-      .maxheight180 {max-height: 180px !important;height: 180px !important;overflow:hidden !important;}
+      .maxheight180 {max-height: 180px !important;height: auto !important;overflow:hidden !important;}
 
       @media (max-width:480px) {
         html, body { overflow-x: hidden; }
@@ -186,7 +186,7 @@
 
         <mj-table padding="10px 10px 0">
           <tr>
-            <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
+            <td  width="50%" style="text-align: left; vertical-align: middle;">
               <div class="maxheight180" style="font-size: 14px;line-height:19px;color: #000000;overflow:hidden;">
                 <p style="margin:0;font-size: 18px;line-height:18px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
                 <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
@@ -218,7 +218,7 @@
 
         <mj-table padding="10px 10px 0">
           <tr>
-            <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
+            <td  width="50%" style="text-align: left; vertical-align: middle;">
               <div class="maxheight180" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
                 <p style="margin:0;font-size: 18px;line-height:18px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
                 <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
@@ -398,7 +398,7 @@
         </mj-image>
         <mj-table padding="10px 10px 0">
           <tr>
-            <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
+            <td  width="50%" style="text-align: left; vertical-align: middle;">
               <div class="maxheight135" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
                 <p style="margin:0;font-size: 18px;line-height:22px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
                 <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
@@ -418,7 +418,7 @@
         </mj-image>
         <mj-table padding="10px 10px 0">
           <tr>
-            <td height="200px" width="50%" style="text-align: left; vertical-align: middle;">
+            <td  width="50%" style="text-align: left; vertical-align: middle;">
               <div class="maxheight135" style="font-size: 14px;line-height:18px;color: #000000;overflow:hidden;">
                 <p style="margin:0;font-size: 18px;line-height:22px !important;color: #000000;font-weight:bold;">Февральский выпуск дайджеста – главные новости уходящей зимы</p>
                 <p style="font-size: 14px;line-height:18px!important;color: #000000;">Единый каталог потребительских товаров в России, новый релиз СФЕРА EDI и практические семинары от КОРУС Консалтинг СНГ в февральском выпуске дайджеста.</p>
