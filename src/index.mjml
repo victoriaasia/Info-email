@@ -5,19 +5,19 @@
       .introText { padding-left: 20px; border-left: 1px solid #878787; }
       .tableTitle { font-size:14px; }
       .maxheight135 {max-height: 135px !important;height: 135px !important;overflow:hidden !important;}
-      .maxheight170 {max-height: 170px !important;height: 170px !important;overflow:hidden !important;}
+      .maxheight170 {max-height: 180px !important;height: 180px !important;overflow:hidden !important;}
 
       @media (max-width:480px) {
         html, body { overflow-x: hidden; }
         .customTable tr td, .customTable tr th { font-size:12px !important; }
-        .title {font-size: 26px !important;}
+        .title {font-size: 24px !important;}
         .rImage table, .rImage table td, .rImage table td img { width: 100% !important; }
         .introText { padding-left: 0px; border-left: 0px;  text-align: justify;}
         .logo { width: 120px !important; }
         .fbLogo { text-align: left; }
         .maxheight135, .maxheight170 {height: auto !important; max-height: auto !important;}
         .soc {width: 60% !important; margin: 0 auto !important;}
-        .texttable table {width: 250px !important; max-width: 250px !important; margin: 0 auto !important;}
+        .texttable table {width: 100% !important; max-width: 250px !important; margin: 0 auto !important;}
       }
 
     </mj-style>
@@ -233,7 +233,7 @@
     <mj-section background-color="#ededed" padding="0">
       <mj-column>
       <mj-text align="left" color="#59595b" font-family="Roboto, Arial, sans-serif">
-         <p style="font-size:32px;line-height:32px;font-weight:bold;color: #000000;text-align:center;">
+         <p class="title" style="font-size:32px;line-height:32px;font-weight:bold;color: #000000;text-align:center;">
           <span>
             Новости документооборота с торговыми сетями
           </span>
@@ -362,7 +362,7 @@
 
     <mj-section  background-color="#ededed" padding="10px 25px">
       <mj-column width="250px" background-color="#FFFFFF" css-class="texttable">
-        <mj-image css-class="rImage" alt="" align="center" border="none" width="300" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/ejseAS/4.jpg">
+        <mj-image css-class="rImage" alt="" align="center" border="none" width="250" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/ejseAS/4.jpg">
         </mj-image>
         <mj-table padding="10px 10px 0">
           <tr>
@@ -384,7 +384,7 @@
       <mj-column width="3px"><mj-text><p></p></mj-text></mj-column>
 
       <mj-column width="250px" background-color="#FFFFFF" css-class="texttable">
-        <mj-image css-class="rImage" alt="" align="center" border="none" width="300" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/fQwT4n/5.jpg">
+        <mj-image css-class="rImage" alt="" align="center" border="none" width="250" padding-left="0px" padding-right="0px" padding-bottom="0" padding-top="0" src="https://image.ibb.co/fQwT4n/5.jpg">
         </mj-image>
         <mj-table padding="10px 10px 0">
           <tr>
@@ -490,13 +490,13 @@
         <mj-column>
           <mj-text padding="10px 25px 0">
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
               <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 СФЕРА-КУРЬЕР
               </a>
               <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
@@ -508,13 +508,13 @@
         <mj-column>
           <mj-text padding="10px 25px 0">
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
               <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 НАЗВАНИЕ НАЗВАНИЕ
               </a>
               <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
@@ -526,16 +526,16 @@
         <mj-column>
           <mj-text padding="10px 25px 0">
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
                 Вет Коннект
               </a>
               <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
             </div>
             <div style="margin: 10px 0 0 !important;">
-              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">
-                НАЗВАНИЕ НАЗВАНИЕ
+              <a href="#" style="color:#e7434c;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;white-space: nowrap;">
+                название
               </a>
-              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">ehjwhge ewjhgj kjewhj fejfhehjf jjfj</p>
+              <p style="margin: 5px 0 0 !important;color:#000000;font-size:14px;line-height:18px;font-family:Roboto, Arial, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
             </div>
           </mj-text>
         </mj-column>
@@ -630,7 +630,7 @@
         <mj-column css-class="soc">
           <mj-table padding="10px 10px 0">
             <tr>
-              <td style="text-align: left; vertical-align: middle;width:30px;height:20px;line-height:45px;">
+              <td style="text-align: left; vertical-align: middle;width:30px;min-width:30px;height:20px;line-height:45px;">
                     <img src="https://image.ibb.co/jAFzAS/i1.jpg" alt="" style="max-width:100%;position:relative;top:5px;">
               </td>
               <td style="text-align: left; vertical-align: middle;line-height:30px;">
@@ -642,7 +642,7 @@
         <mj-column css-class="soc">
           <mj-table padding="10px 10px 0">
               <tr>
-                <td style="text-align: left; vertical-align: middle;width:30px;height:20px;line-height:45px;">
+                <td style="text-align: left; vertical-align: middle;width:30px;min-width:30px;height:20px;line-height:45px;">
                       <img src="https://image.ibb.co/gMG6qS/i3.jpg" alt="" style="max-width:100%;position:relative;top:5px;">
                 </td>
                 <td style="text-align: left; vertical-align: middle;line-height:30px;">
@@ -655,7 +655,7 @@
       <mj-column css-class="soc">
         <mj-table padding="10px 10px 0">
           <tr style="color:#59595b !important;">
-            <td style="text-align: left; vertical-align: middle;width:30px;height:20px;line-height:45px;">
+            <td style="text-align: left; vertical-align: middle;width:30px;min-width:30px;height:20px;line-height:45px;">
                   <img src="https://image.ibb.co/kiakbc/i2.jpg" alt="" style="max-width:100%;position:relative;top:5px;">
             </td>
             <td style="text-align: left; vertical-align: middle;line-height:30px;">
@@ -672,7 +672,7 @@
       <mj-column css-class="soc" width="30%" style="margin: 0 auto !important;">
         <mj-table padding="10px 10px 0">
             <tr>
-              <td style="text-align: left; vertical-align: middle;width:30px;height:25px;line-height:45px;">
+              <td style="text-align: left; vertical-align: middle;width:30px;min-width:30px;height:25px;line-height:45px;">
                     <img src="https://image.ibb.co/kzyRXH/fb_icon_n.png" alt="" style="max-width:100%;position:relative;top:5px;">
               </td>
               <td style="text-align: left; vertical-align: middle;line-height:30px;">
